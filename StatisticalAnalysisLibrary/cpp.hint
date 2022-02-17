@@ -1,0 +1,2 @@
+#define STATISTICALANALYSISLIBRARY_API __declspec(dllexport)
+#define STATISTICALANALYSISLIBRARY_API __declspec(dllimport)
