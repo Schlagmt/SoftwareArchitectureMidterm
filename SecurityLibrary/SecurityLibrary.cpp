@@ -5,7 +5,11 @@ using namespace std;
 
 SecurityLibrary::SecurityLibrary()
 {
-    return;
+    language = "";
+}
+
+SecurityLibrary::SecurityLibrary(string languageDescriptor)
+{
 }
 
 void SecurityLibrary::SecurityLibraryFunction(void)
@@ -14,4 +18,18 @@ void SecurityLibrary::SecurityLibraryFunction(void)
 
     CoreLibrary coreLibrary;
     coreLibrary.CoreLibraryFunction2();
+}
+
+void SecurityLibrary_API_Function1()
+{
+}
+
+int SecurityLibrary_API_Function2()
+{
+    return 0;
+}
+
+bool SecurityLibrary_API_Function3()
+{
+    return false;
 }

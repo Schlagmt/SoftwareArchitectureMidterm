@@ -6,7 +6,11 @@ using namespace std;
 
 Application1Library::Application1Library()
 {
-    return;
+    language = "";
+}
+
+Application1Library::Application1Library(string languageDescriptor)
+{
 }
 
 void Application1Library::Application1LibraryFunction(void)
@@ -18,4 +22,18 @@ void Application1Library::Application1LibraryFunction(void)
 
     SecurityLibrary securityLibrary;
     securityLibrary.SecurityLibraryFunction();
+}
+
+void Application1Library_API_Function1()
+{
+}
+
+int Application1Library_API_Function2()
+{
+    return 0;
+}
+
+bool Application1Library_API_Function3()
+{
+    return false;
 }

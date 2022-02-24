@@ -5,7 +5,11 @@ using namespace std;
 
 LicensingLibrary::LicensingLibrary()
 {
-    return;
+    language = "";
+}
+
+LicensingLibrary::LicensingLibrary(string languageDescriptor)
+{
 }
 
 void LicensingLibrary::LicensingLibraryFunction(void)
@@ -14,4 +18,18 @@ void LicensingLibrary::LicensingLibraryFunction(void)
 
     CoreLibrary coreLibrary;
     coreLibrary.CoreLibraryFunction1();
+}
+
+void LicensingLibrary_API_Function1()
+{
+}
+
+int LicensingLibrary_API_Function2()
+{
+    return 0;
+}
+
+bool LicensingLibrary_API_Function3()
+{
+    return false;
 }

@@ -6,7 +6,11 @@ using namespace std;
 
 UILibrary::UILibrary()
 {
-    return;
+    language = "";
+}
+
+UILibrary::UILibrary(string languageDescriptor)
+{
 }
 
 void UILibrary::UILibraryFunction(void)
@@ -18,4 +22,18 @@ void UILibrary::UILibraryFunction(void)
 
     Application2Library application2Library;
     application2Library.Application2LibraryFunction1();
+}
+
+void UILibrary_API_Function1()
+{
+}
+
+int UILibrary_API_Function2()
+{
+    return 0;
+}
+
+bool UILibrary_API_Function3()
+{
+    return false;
 }

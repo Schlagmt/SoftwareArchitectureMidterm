@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-24 13:28-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Batch\Batch.cpp:35
+msgctxt "BatchContext"
+msgid "Batch::Main - Run Statistical Analysis behind the scene"
+msgstr "German - "
+"Batch::Main - Run Statistical Analysis behind the scene"
+
+#: Application2Library\Application2Library.cpp:30
+msgctxt "Application2Context"
+msgid ""
+"UILibrary::UILibraryFunction -> Application2Library::"
+"Application2LibraryFunction1 - Routing and Logic"
+msgstr "German - "
+"UILibrary::UILibraryFunction -> Application2Library::"
+"Application2LibraryFunction1 - Routing and Logic"
+
+#: Application2Library\Application2Library.cpp:38
+msgctxt "Application2Context"
+msgid ""
+"Batch::Main -> Application2Library::Application2LibraryFunction2 - Routing "
+"and Logic"
+msgstr "German - "
+"Batch::Main -> Application2Library::Application2LibraryFunction2 - Routing "
+"and Logic"
+
+#: StatisticalAnalysisLibrary\StatisticalAnalysisLibrary.cpp:30
+msgctxt "StatisticalAnalysisContext"
+msgid ""
+"Application2Library::Application2LibraryFunction -> "
+"StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction - Statistical "
+"Analysis Time!!"
+msgstr "German - "
+"Application2Library::Application2LibraryFunction -> "
+"StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction - Statistical "
+"Analysis Time!!"
+
+#: CoreLibrary\CoreLibrary.cpp:29
+msgctxt "CoreContext"
+msgid ""
+"LicensingLibrary::LicensingLibraryFunction -> CoreLibrary::"
+"CoreLibraryFunction1 - First utility"
+msgstr "German - "
+"LicensingLibrary::LicensingLibraryFunction -> CoreLibrary::"
+"CoreLibraryFunction1 - First utility"
+
+#: CoreLibrary\CoreLibrary.cpp:34
+msgctxt "CoreContext"
+msgid ""
+"SecurityLibrary::SecurityLibraryFunction -> CoreLibrary::"
+"CoreLibraryFunction2 - Second utility"
+msgstr "German - "
+"SecurityLibrary::SecurityLibraryFunction -> CoreLibrary::"
+"CoreLibraryFunction2 - Second utility"
+
+#: CoreLibrary\CoreLibrary.cpp:39
+msgctxt "CoreContext"
+msgid ""
+"StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction -> "
+"CoreLibrary::CoreLibraryFunction3 - Third utility"
+msgstr "German - "
+"StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction -> "
+"CoreLibrary::CoreLibraryFunction3 - Third utility"
