@@ -41,7 +41,7 @@ void ClassInCoreLibrary::CoreLibraryFunction3(void)
 
 void CoreLibrary_API_Function1()
 {
-    cout << translate("CoreContext", "Application2Library_API_Function1 -> CoreLibrary_API_Function1 - Non-class utility") << endl;
+    cout << translate("CoreContext", "Application2Library_API_Function3 -> CoreLibrary_API_Function1 - Non-class utility") << endl;
     CoreLibrary_API_Function3();
 }
 

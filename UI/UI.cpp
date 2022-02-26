@@ -3,6 +3,7 @@
 #include "../UILibrary/UILibrary.h"
 #include "../Application2Library/Application2Library.h"
 #include "boost/locale.hpp"
+
 using namespace std;
 using namespace boost::locale;
 
@@ -36,9 +37,9 @@ int main()
 
     ClassInUILibrary uiClass(languageDescriptor);
     uiClass.UILibraryFunction();
-   /*
+   
     ClassInApplication2Library applicationClass(languageDescriptor);
-    applicationClass.Application2LibraryFunction2();
+    applicationClass.Application2LibraryFunction3();
 
-    Application2Library_API_Function1();*/
+    Application2Library_API_Function3();
 }

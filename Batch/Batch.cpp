@@ -38,6 +38,6 @@ int main()
     ClassInApplication2Library application2Class(languageDescriptor);
     application2Class.Application2LibraryFunction2();
 
-    Application2Library_API_Function1();
-    Application2Library_API_Function2();
+    //Application2Library_API_Function1();
+    //Application2Library_API_Function2();
 }

@@ -118,11 +118,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\Sarah\source\boost_1_78_0\boost_1_78_0;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Matthew\Documents\SoftwareArchitecture\boost_1_76_0;C:\Users\Sarah\source\boost_1_78_0\boost_1_78_0</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Matthew\Documents\SoftwareArchitecture\boost_1_76_0\stage\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -146,6 +147,9 @@
     <ClCompile Include="UI.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Application2Library\Application2Library.vcxproj">
+      <Project>{e19a7766-6529-499b-a3bc-63c787bd2198}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\UILibrary\UILibrary.vcxproj">
       <Project>{1a7e8753-3696-4ec7-aafd-0296a1a336e1}</Project>
     </ProjectReference>

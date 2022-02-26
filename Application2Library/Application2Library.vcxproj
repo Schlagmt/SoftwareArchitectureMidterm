@@ -161,6 +161,9 @@
     <ClCompile Include="Application2Library.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CoreLibrary\CoreLibrary.vcxproj">
+      <Project>{7ac55cf5-c0d9-4b15-95a9-35b77fc94d7c}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\StatisticalAnalysisLibrary\StatisticalAnalysisLibrary.vcxproj">
       <Project>{95105926-ef92-4c0f-be5c-d6da8f61684b}</Project>
     </ProjectReference>

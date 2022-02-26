@@ -39,8 +39,12 @@ void ClassInApplication2Library::Application2LibraryFunction2(void)
 
     cout << translate("Application2Context", "Batch::Main -> ClassInApplication2Library::Application2LibraryFunction2 - Routing and Logic") << endl;
 
+    Application2Library_API_Function1();
+
     ClassInStatisticalAnalysisLibrary statisticalAnalysisClass(language);
     statisticalAnalysisClass.StatisticalAnalysisLibraryFunction();
+
+    Application2Library_API_Function1();
 }
 
 void ClassInApplication2Library::Application2LibraryFunction3(void)
@@ -62,6 +66,6 @@ APPLICATION2LIBRARY_API int Application2Library_API_Function2()
 APPLICATION2LIBRARY_API bool Application2Library_API_Function3()
 {
     cout << translate("Application2Context", "UI::Main -> Application2Library_API_Function3 - Get graphable data") << endl;
-    //CoreLibrary_API_Function1();
+    CoreLibrary_API_Function1();
     return false;
 }

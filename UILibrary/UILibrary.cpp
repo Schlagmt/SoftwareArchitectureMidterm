@@ -33,7 +33,7 @@ void ClassInUILibrary::UILibraryFunction(void)
     application1Class.Application1LibraryFunction();
 
     ClassInApplication2Library application2Class(language);
-    application2Class.Application2LibraryFunction3();
+    application2Class.Application2LibraryFunction1();
 }
 
 void UILibrary_API_Function1()

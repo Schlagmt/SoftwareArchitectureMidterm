@@ -8,102 +8,149 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-24 13:28-0500\n"
+"POT-Creation-Date: 2022-02-26 10:28-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: de \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Batch\Batch.cpp:10
-msgid "This is a test"
-msgstr "German - This is a test"
-
-#: Batch\Batch.cpp:35
+#: Batch\Batch.cpp:36
 msgctxt "BatchContext"
 msgid "Batch::Main - Run Statistical Analysis behind the scene"
 msgstr "German - "
 "Batch::Main - Run Statistical Analysis behind the scene"
 
-#: Application2Library\Application2Library.cpp:29
+#: Application2Library\Application2Library.cpp:31
 msgctxt "Application2Context"
-msgid "ClassInUILibrary::UILibraryFunction -> ClassInApplication2Library::Application2LibraryFunction1 - Routing and Logic"
-msgstr "German - ClassInUILibrary::UILibraryFunction -> ClassInApplication2Library::Application2LibraryFunction1 - Routing and Logic"
+msgid ""
+"ClassInUILibrary::UILibraryFunction -> ClassInApplication2Library::"
+"Application2LibraryFunction1 - Routing and Logic"
+msgstr "German - "
+"ClassInUILibrary::UILibraryFunction -> ClassInApplication2Library::"
+"Application2LibraryFunction1 - Routing and Logic"
 
-#: Application2Library\Application2Library.cpp:38
+#: Application2Library\Application2Library.cpp:40
 msgctxt "Application2Context"
-msgid "Batch::Main -> ClassInApplication2Library::Application2LibraryFunction2 - Routing and Logic"
-msgstr "German - Batch::Main -> ClassInApplication2Library::Application2LibraryFunction2 - Routing and Logic"
+msgid ""
+"Batch::Main -> ClassInApplication2Library::Application2LibraryFunction2 - "
+"Routing and Logic"
+msgstr "German - "
+"Batch::Main -> ClassInApplication2Library::Application2LibraryFunction2 - "
+"Routing and Logic"
 
+#: Application2Library\Application2Library.cpp:48
+msgctxt "Application2Context"
+msgid ""
+"UI::Main -> ClassInApplication2Library::Application2LibraryFunction3 - Get "
+"Some Info"
+msgstr "German - "
+"UI::Main -> ClassInApplication2Library::Application2LibraryFunction3 - Get "
+"Some Info"
+
+#: Application2Library\Application2Library.cpp:53
+msgctxt "Application2Context"
+msgid ""
+"Batch::Main -> Application2Library_API_Function1 - Do something with data"
+msgstr "German - "
+"Batch::Main -> Application2Library_API_Function1 - Do something with data"
+
+#: Application2Library\Application2Library.cpp:58
+msgctxt "Application2Context"
+msgid "Batch::Main -> Application2Library_API_Function2 - Record results"
+msgstr "German - "
+"Batch::Main -> Application2Library_API_Function2 - Record results"
+
+#: Application2Library\Application2Library.cpp:64
+msgctxt "Application2Context"
+msgid "UI::Main -> Application2Library_API_Function3 - Get graphable data"
+msgstr "German - "
+"UI::Main -> Application2Library_API_Function3 - Get graphable data"
 
 #: StatisticalAnalysisLibrary\StatisticalAnalysisLibrary.cpp:30
 msgctxt "StatisticalAnalysisContext"
 msgid ""
-"Application2Library::Application2LibraryFunction -> "
-"StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction - Statistical "
-"Analysis Time!!"
+"ClassInApplication2Library::Application2LibraryFunction -> "
+"ClassInStatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction - "
+"Statistical Analysis Time!!"
 msgstr "German - "
-"Application2Library::Application2LibraryFunction -> "
-"StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction - Statistical "
-"Analysis Time!!"
+"ClassInApplication2Library::Application2LibraryFunction -> "
+"ClassInStatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction - "
+"Statistical Analysis Time!!"
 
 #: CoreLibrary\CoreLibrary.cpp:29
 msgctxt "CoreContext"
 msgid ""
-"LicensingLibrary::LicensingLibraryFunction -> CoreLibrary::"
+"ClassInLicensingLibrary::LicensingLibraryFunction -> ClassInCoreLibrary::"
 "CoreLibraryFunction1 - First utility"
 msgstr "German - "
-"LicensingLibrary::LicensingLibraryFunction -> CoreLibrary::"
+"ClassInLicensingLibrary::LicensingLibraryFunction -> ClassInCoreLibrary::"
 "CoreLibraryFunction1 - First utility"
 
 #: CoreLibrary\CoreLibrary.cpp:34
 msgctxt "CoreContext"
 msgid ""
-"SecurityLibrary::SecurityLibraryFunction -> CoreLibrary::"
+"ClassInSecurityLibrary::SecurityLibraryFunction -> ClassInCoreLibrary::"
 "CoreLibraryFunction2 - Second utility"
 msgstr "German - "
-"SecurityLibrary::SecurityLibraryFunction -> CoreLibrary::"
+"ClassInSecurityLibrary::SecurityLibraryFunction -> ClassInCoreLibrary::"
 "CoreLibraryFunction2 - Second utility"
 
 #: CoreLibrary\CoreLibrary.cpp:39
 msgctxt "CoreContext"
 msgid ""
-"StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction -> "
-"CoreLibrary::CoreLibraryFunction3 - Third utility"
+"ClassInStatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction -> "
+"ClassInCoreLibrary::CoreLibraryFunction3 - Third utility"
 msgstr "German - "
-"StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction -> "
-"CoreLibrary::CoreLibraryFunction3 - Third utility"
+"ClassInStatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction -> "
+"ClassInCoreLibrary::CoreLibraryFunction3 - Third utility"
 
-#: UI\UI.cpp:34
+#: CoreLibrary\CoreLibrary.cpp:44
+msgctxt "CoreContext"
+msgid ""
+"Application2Library_API_Function3 -> CoreLibrary_API_Function1 - Non-class "
+"utility"
+msgstr "German - "
+"Application2Library_API_Function3 -> CoreLibrary_API_Function1 - Non-class "
+"utility"
+
+#: UI\UI.cpp:36
 msgctxt "UIContext"
 msgid "UI::Main - Get some info for Statistical Analysis"
-msgstr "German - UI::Main - Get some info for Statistical Analysis"
+msgstr "German - "
+"UI::Main - Get some info for Statistical Analysis"
 
 #: UILibrary\UILibrary.cpp:30
 msgctxt "UIContext"
 msgid "UI::Main -> ClassInUILibrary::UILibraryFunction - Create a cool UI"
-msgstr "German Create a cool UI"
+msgstr "German - "
+"UI::Main -> ClassInUILibrary::UILibraryFunction - Create a cool UI"
 
 #: Application1Library\Application1Library.cpp:30
 msgctxt "Application1Context"
 msgid ""
 "ClassInUILibrary::UILibraryFunction -> ClassInApplication1Library::"
 "Application1LibraryFunction - Routing and Logic"
-msgstr "German Routing and Logic"
+msgstr "German - "
+"ClassInUILibrary::UILibraryFunction -> ClassInApplication1Library::"
+"Application1LibraryFunction - Routing and Logic"
 
 #: LicensingLibrary\LicensingLibrary.cpp:29
 msgctxt "LicenseContext"
 msgid ""
 "ClassInApplication1Library::Application1LibraryFunction-"
 ">ClassInLicensingLibrary::LicensingLibraryFunction - Do some licensing"
-msgstr "German Do some licensing"
+msgstr "German - "
+"ClassInApplication1Library::Application1LibraryFunction-"
+">ClassInLicensingLibrary::LicensingLibraryFunction - Do some licensing"
 
 #: SecurityLibrary\SecurityLibrary.cpp:29
 msgctxt "SecurityContext"
 msgid ""
 "ClassInApplication1Library::Application1LibraryFunction-"
 ">ClassInSecurityLibrary::SecurityLibraryFunction - Do some security"
-msgstr "German - ClassInApplication1Library::Application1LibraryFunction-"
+msgstr "German - "
+"ClassInApplication1Library::Application1LibraryFunction-"
 ">ClassInSecurityLibrary::SecurityLibraryFunction - Do some security"
