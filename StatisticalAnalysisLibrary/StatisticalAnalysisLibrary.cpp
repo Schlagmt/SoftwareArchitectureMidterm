@@ -6,12 +6,12 @@
 using namespace std;
 using namespace boost::locale;
 
-StatisticalAnalysisLibrary::StatisticalAnalysisLibrary()
+ClassInStatisticalAnalysisLibrary::ClassInStatisticalAnalysisLibrary()
 {
     language = "";
 }
 
-StatisticalAnalysisLibrary::StatisticalAnalysisLibrary(string languageDescriptor)
+ClassInStatisticalAnalysisLibrary::ClassInStatisticalAnalysisLibrary(string languageDescriptor)
 {
     language = languageDescriptor;
     generator gen;
@@ -25,12 +25,12 @@ StatisticalAnalysisLibrary::StatisticalAnalysisLibrary(string languageDescriptor
     cout.imbue(locale());
 }
 
-void StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction(void)
+void ClassInStatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction(void)
 {
-    cout << translate("StatisticalAnalysisContext", "Application2Library::Application2LibraryFunction -> StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction - Statistical Analysis Time!!") << endl;
+    cout << translate("StatisticalAnalysisContext", "ClassInApplication2Library::Application2LibraryFunction -> ClassInStatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction - Statistical Analysis Time!!") << endl;
 
-    CoreLibrary coreLibrary(language);
-    coreLibrary.CoreLibraryFunction3();
+    ClassInCoreLibrary coreClass(language);
+    coreClass.CoreLibraryFunction3();
 }
 
 void StatisticalAnalysisLibrary_API_Function1()

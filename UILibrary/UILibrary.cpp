@@ -2,26 +2,38 @@
 #include <iostream>
 #include "../Application1Library/Application1Library.h"
 #include "../Application2Library/Application2Library.h"
+#include "boost/locale.hpp"
 using namespace std;
+using namespace boost::locale;
 
-UILibrary::UILibrary()
+ClassInUILibrary::ClassInUILibrary()
 {
     language = "";
 }
 
-UILibrary::UILibrary(string languageDescriptor)
+ClassInUILibrary::ClassInUILibrary(string languageDescriptor)
 {
+    language = languageDescriptor;
+    generator gen;
+
+    // Specify location of dictionaries
+    gen.add_messages_path("../");
+    gen.add_messages_domain("messages");
+
+    // Generate locales and imbue them to iostream
+    locale::global(gen(languageDescriptor));
+    cout.imbue(locale());
 }
 
-void UILibrary::UILibraryFunction(void)
+void ClassInUILibrary::UILibraryFunction(void)
 {
-    cout << "UI::Main -> UILibrary::UILibraryFunction - Create a cool UI" << endl;
+    cout << translate("UIContext","UI::Main -> ClassInUILibrary::UILibraryFunction - Create a cool UI") << endl;
 
-    Application1Library application1Library;
-    application1Library.Application1LibraryFunction();
+    ClassInApplication1Library application1Class(language);
+    application1Class.Application1LibraryFunction();
 
-    Application2Library application2Library;
-    application2Library.Application2LibraryFunction1();
+    ClassInApplication2Library application2Class(language);
+    application2Class.Application2LibraryFunction3();
 }
 
 void UILibrary_API_Function1()

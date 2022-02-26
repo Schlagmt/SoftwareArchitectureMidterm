@@ -1,23 +1,35 @@
 #include "SecurityLibrary.h"
 #include <iostream>
 #include "../CoreLibrary/CoreLibrary.h"
+#include "boost/locale.hpp"
 using namespace std;
+using namespace boost::locale;
 
-SecurityLibrary::SecurityLibrary()
+ClassInSecurityLibrary::ClassInSecurityLibrary()
 {
     language = "";
 }
 
-SecurityLibrary::SecurityLibrary(string languageDescriptor)
+ClassInSecurityLibrary::ClassInSecurityLibrary(string languageDescriptor)
 {
+    language = languageDescriptor;
+    generator gen;
+
+    // Specify location of dictionaries
+    gen.add_messages_path("../");
+    gen.add_messages_domain("messages");
+
+    // Generate locales and imbue them to iostream
+    locale::global(gen(languageDescriptor));
+    cout.imbue(locale());
 }
 
-void SecurityLibrary::SecurityLibraryFunction(void)
+void ClassInSecurityLibrary::SecurityLibraryFunction(void)
 {
-    cout << "Application1Library::Application1LibraryFunction -> SecurityLibrary::SecurityLibraryFunction - Do some security" << endl;
+    cout << translate("SecurityContext", "ClassInApplication1Library::Application1LibraryFunction->ClassInSecurityLibrary::SecurityLibraryFunction - Do some security") << endl;
 
-    CoreLibrary coreLibrary;
-    coreLibrary.CoreLibraryFunction2();
+    ClassInCoreLibrary coreClass(language);
+    coreClass.CoreLibraryFunction2();
 }
 
 void SecurityLibrary_API_Function1()

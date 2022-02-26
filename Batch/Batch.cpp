@@ -6,10 +6,11 @@
 using namespace std;
 using namespace boost::locale;
 
+
 int main()
 {    
     int language;
-    cout << "Pick the langauge: 1 = English | 2 = German" << endl;
+    cout << "Pick the language: 1 = English | 2 = German" << endl;
     cin >> language;
 
     generator gen;
@@ -33,7 +34,10 @@ int main()
     cout.imbue(locale());
 
     cout << translate("BatchContext","Batch::Main - Run Statistical Analysis behind the scene") << endl;
+  
+    ClassInApplication2Library application2Class(languageDescriptor);
+    application2Class.Application2LibraryFunction2();
 
-    Application2Library application2Library(languageDescriptor);
-    application2Library.Application2LibraryFunction2();
+    Application2Library_API_Function1();
+    Application2Library_API_Function2();
 }

@@ -5,12 +5,12 @@
 using namespace std;
 using namespace boost::locale;
 
-CoreLibrary::CoreLibrary()
+ClassInCoreLibrary::ClassInCoreLibrary()
 {
     language = "";
 }
 
-CoreLibrary::CoreLibrary(string languageDescriptor)
+ClassInCoreLibrary::ClassInCoreLibrary(string languageDescriptor)
 {
     language = languageDescriptor;
     generator gen;
@@ -24,23 +24,25 @@ CoreLibrary::CoreLibrary(string languageDescriptor)
     cout.imbue(locale());
 }
 
-void CoreLibrary::CoreLibraryFunction1(void)
+void ClassInCoreLibrary::CoreLibraryFunction1(void)
 {
-    cout << translate("CoreContext", "LicensingLibrary::LicensingLibraryFunction -> CoreLibrary::CoreLibraryFunction1 - First utility") << endl << endl;
+    cout << translate("CoreContext", "ClassInLicensingLibrary::LicensingLibraryFunction -> ClassInCoreLibrary::CoreLibraryFunction1 - First utility") << endl << endl;
 }
 
-void CoreLibrary::CoreLibraryFunction2(void)
+void ClassInCoreLibrary::CoreLibraryFunction2(void)
 {
-    cout << translate("CoreContext", "SecurityLibrary::SecurityLibraryFunction -> CoreLibrary::CoreLibraryFunction2 - Second utility") << endl << endl;
+    cout << translate("CoreContext", "ClassInSecurityLibrary::SecurityLibraryFunction -> ClassInCoreLibrary::CoreLibraryFunction2 - Second utility") << endl << endl;
 }
 
-void CoreLibrary::CoreLibraryFunction3(void)
+void ClassInCoreLibrary::CoreLibraryFunction3(void)
 {
-    cout << translate("CoreContext", "StatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction -> CoreLibrary::CoreLibraryFunction3 - Third utility") << endl << endl;
+    cout << translate("CoreContext", "ClassInStatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction -> ClassInCoreLibrary::CoreLibraryFunction3 - Third utility") << endl << endl;
 }
 
 void CoreLibrary_API_Function1()
 {
+    cout << translate("CoreContext", "Application2Library_API_Function1 -> CoreLibrary_API_Function1 - Non-class utility") << endl;
+    CoreLibrary_API_Function3();
 }
 
 int CoreLibrary_API_Function2()
@@ -50,5 +52,6 @@ int CoreLibrary_API_Function2()
 
 bool CoreLibrary_API_Function3()
 {
+    cout << ("CoreContext", "CoreLibrary_API_Function1 -> CoreLibrary_API_Function3 (not exported) - Support utility") << endl;
     return false;
 }

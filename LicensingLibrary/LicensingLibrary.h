@@ -7,13 +7,13 @@
 #include <string>
 using namespace std;
 
-class LICENSINGLIBRARY_API LicensingLibrary {
+class LICENSINGLIBRARY_API ClassInLicensingLibrary {
 private:
 	string language;
 
 public:
-	LicensingLibrary(void);
-	LicensingLibrary(string languageDescriptor);
+	ClassInLicensingLibrary(void);
+	ClassInLicensingLibrary(string languageDescriptor);
 
 	void LicensingLibraryFunction(void);
 };

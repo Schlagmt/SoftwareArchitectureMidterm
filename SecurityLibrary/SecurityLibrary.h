@@ -7,13 +7,13 @@
 #include <string>
 using namespace std;
 
-class SECURITYLIBRARY_API SecurityLibrary {
+class SECURITYLIBRARY_API ClassInSecurityLibrary {
 private:
 	string language;
 
 public:
-	SecurityLibrary(void);
-	SecurityLibrary(string languageDescriptor);
+	ClassInSecurityLibrary(void);
+	ClassInSecurityLibrary(string languageDescriptor);
 
 	void SecurityLibraryFunction(void);
 };

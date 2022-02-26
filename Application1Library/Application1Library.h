@@ -5,15 +5,17 @@
 #endif
 
 #include <string>
+#include "boost/locale.hpp"
 using namespace std;
+using namespace boost::locale;
 
-class APPLICATION1LIBRARY_API Application1Library {
+class APPLICATION1LIBRARY_API ClassInApplication1Library {
 private:
 	string language;
 
 public:
-	Application1Library(void);
-	Application1Library(string languageDescriptor);
+	ClassInApplication1Library(void);
+	ClassInApplication1Library(string languageDescriptor);
 	
 	void Application1LibraryFunction(void);
 };

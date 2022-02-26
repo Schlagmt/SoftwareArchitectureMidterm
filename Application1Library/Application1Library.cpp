@@ -2,26 +2,38 @@
 #include <iostream>
 #include "../LicensingLibrary/LicensingLibrary.h"
 #include "../SecurityLibrary/SecurityLibrary.h"
+#include "boost/locale.hpp"
 using namespace std;
+using namespace boost::locale;
 
-Application1Library::Application1Library()
+ClassInApplication1Library::ClassInApplication1Library()
 {
     language = "";
 }
 
-Application1Library::Application1Library(string languageDescriptor)
+ClassInApplication1Library::ClassInApplication1Library(string languageDescriptor)
 {
+    language = languageDescriptor;
+    generator gen;
+
+    // Specify location of dictionaries
+    gen.add_messages_path("../");
+    gen.add_messages_domain("messages");
+
+    // Generate locales and imbue them to iostream
+    locale::global(gen(languageDescriptor));
+    cout.imbue(locale());
 }
 
-void Application1Library::Application1LibraryFunction(void)
+void ClassInApplication1Library::Application1LibraryFunction(void)
 {
-    cout << "UILibrary::UILibraryFunction -> Application1Library::Application1LibraryFunction - Routing and Logic" << endl;
+    cout << translate("Application1Context", "ClassInUILibrary::UILibraryFunction -> ClassInApplication1Library::Application1LibraryFunction - Routing and Logic") << endl;
 
-    LicensingLibrary licensingLibrary;
-    licensingLibrary.LicensingLibraryFunction();
+    ClassInLicensingLibrary licensingClass(language);
+    licensingClass.LicensingLibraryFunction();
 
-    SecurityLibrary securityLibrary;
-    securityLibrary.SecurityLibraryFunction();
+    ClassInSecurityLibrary securityClass(language);
+    securityClass.SecurityLibraryFunction();
 }
 
 void Application1Library_API_Function1()

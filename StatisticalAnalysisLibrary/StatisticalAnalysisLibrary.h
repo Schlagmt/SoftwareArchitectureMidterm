@@ -7,13 +7,13 @@
 #include <string>
 using namespace std;
 
-class STATISTICALANALYSISLIBRARY_API StatisticalAnalysisLibrary {
+class STATISTICALANALYSISLIBRARY_API ClassInStatisticalAnalysisLibrary {
 private:
 	string language;
 
 public:
-	StatisticalAnalysisLibrary();
-	StatisticalAnalysisLibrary(string languageDescriptor);
+	ClassInStatisticalAnalysisLibrary();
+	ClassInStatisticalAnalysisLibrary(string languageDescriptor);
 
 	void StatisticalAnalysisLibraryFunction(void);
 };

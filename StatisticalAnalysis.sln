@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UI", "UI\UI.vcxproj", "{E25CC831-F1B4-4DA8-9C4A-0CDD043437C4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E19A7766-6529-499B-A3BC-63C787BD2198} = {E19A7766-6529-499B-A3BC-63C787BD2198}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Batch", "Batch\Batch.vcxproj", "{31E3CB80-DE12-4784-B1DE-8BB7B008D3F3}"
 EndProject

@@ -7,13 +7,13 @@
 #include <string>
 using namespace std;
 
-class UILIBRARY_API UILibrary {
+class UILIBRARY_API ClassInUILibrary {
 private:
 	string language;
 
 public:
-	UILibrary(void);
-	UILibrary(string languageDescriptor);
+	ClassInUILibrary(void);
+	ClassInUILibrary(string languageDescriptor);
 
 	void UILibraryFunction(void);
 };
