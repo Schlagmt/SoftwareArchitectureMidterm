@@ -36,15 +36,18 @@ void ClassInUILibrary::UILibraryFunction(void)
     application2Class.Application2LibraryFunction1();
 }
 
+// Never Called
 void UILibrary_API_Function1()
 {
 }
 
+// Never Called
 int UILibrary_API_Function2()
 {
     return 0;
 }
 
+// Never Called
 bool UILibrary_API_Function3()
 {
     return false;

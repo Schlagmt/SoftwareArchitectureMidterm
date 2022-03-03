@@ -39,17 +39,20 @@ void ClassInCoreLibrary::CoreLibraryFunction3(void)
     cout << translate("CoreContext", "ClassInStatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction -> ClassInCoreLibrary::CoreLibraryFunction3 - Third utility") << endl << endl;
 }
 
+// Never Called
 void CoreLibrary_API_Function1()
 {
     cout << translate("CoreContext", "Application2Library_API_Function3 -> CoreLibrary_API_Function1 - Non-class utility") << endl;
     CoreLibrary_API_Function3();
 }
 
+// Never Called
 int CoreLibrary_API_Function2()
 {
     return 0;
 }
 
+// Never Called
 bool CoreLibrary_API_Function3()
 {
     cout << ("CoreContext", "CoreLibrary_API_Function1 -> CoreLibrary_API_Function3 (not exported) - Support utility") << endl;

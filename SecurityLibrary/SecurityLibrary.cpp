@@ -32,15 +32,18 @@ void ClassInSecurityLibrary::SecurityLibraryFunction(void)
     coreClass.CoreLibraryFunction2();
 }
 
+// Never Called
 void SecurityLibrary_API_Function1()
 {
 }
 
+// Never Called
 int SecurityLibrary_API_Function2()
 {
     return 0;
 }
 
+// Never Called
 bool SecurityLibrary_API_Function3()
 {
     return false;

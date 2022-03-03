@@ -32,15 +32,18 @@ void ClassInLicensingLibrary::LicensingLibraryFunction(void)
     coreClass.CoreLibraryFunction1();
 }
 
+// Never Called
 void LicensingLibrary_API_Function1()
 {
 }
 
+// Never Called
 int LicensingLibrary_API_Function2()
 {
     return 0;
 }
 
+// Never Called
 bool LicensingLibrary_API_Function3()
 {
     return false;

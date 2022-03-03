@@ -5,10 +5,10 @@
 #
 #, fuzzy
 msgid ""
-msgstr ""
+msgstr "German - "
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-26 10:28-0500\n"
+"POT-Creation-Date: 2022-03-03 09:37-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr "German - "
 "Batch::Main -> ClassInApplication2Library::Application2LibraryFunction2 - "
 "Routing and Logic"
 
-#: Application2Library\Application2Library.cpp:48
+#: Application2Library\Application2Library.cpp:51
 msgctxt "Application2Context"
 msgid ""
 "UI::Main -> ClassInApplication2Library::Application2LibraryFunction3 - Get "
@@ -50,20 +50,25 @@ msgstr "German - "
 "UI::Main -> ClassInApplication2Library::Application2LibraryFunction3 - Get "
 "Some Info"
 
-#: Application2Library\Application2Library.cpp:53
+#: Application2Library\Application2Library.cpp:56
 msgctxt "Application2Context"
 msgid ""
-"Batch::Main -> Application2Library_API_Function1 - Do something with data"
+"ClassInApplication2Library::Application2LibraryFunction2 -> "
+"Application2Library_API_Function1 - Do something with data"
 msgstr "German - "
-"Batch::Main -> Application2Library_API_Function1 - Do something with data"
+"ClassInApplication2Library::Application2LibraryFunction2 -> "
+"Application2Library_API_Function1 - Do something with data"
 
-#: Application2Library\Application2Library.cpp:58
+#: Application2Library\Application2Library.cpp:61
 msgctxt "Application2Context"
-msgid "Batch::Main -> Application2Library_API_Function2 - Record results"
+msgid ""
+"ClassInApplication2Library::Application2LibraryFunction2 -> "
+"Application2Library_API_Function2 - Record results"
 msgstr "German - "
-"Batch::Main -> Application2Library_API_Function2 - Record results"
+"ClassInApplication2Library::Application2LibraryFunction2 -> "
+"Application2Library_API_Function2 - Record results"
 
-#: Application2Library\Application2Library.cpp:64
+#: Application2Library\Application2Library.cpp:67
 msgctxt "Application2Context"
 msgid "UI::Main -> Application2Library_API_Function3 - Get graphable data"
 msgstr "German - "
@@ -107,7 +112,7 @@ msgstr "German - "
 "ClassInStatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction -> "
 "ClassInCoreLibrary::CoreLibraryFunction3 - Third utility"
 
-#: CoreLibrary\CoreLibrary.cpp:44
+#: CoreLibrary\CoreLibrary.cpp:45
 msgctxt "CoreContext"
 msgid ""
 "Application2Library_API_Function3 -> CoreLibrary_API_Function1 - Non-class "

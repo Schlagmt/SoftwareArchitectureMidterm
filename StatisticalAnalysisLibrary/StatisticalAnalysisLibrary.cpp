@@ -33,15 +33,18 @@ void ClassInStatisticalAnalysisLibrary::StatisticalAnalysisLibraryFunction(void)
     coreClass.CoreLibraryFunction3();
 }
 
+// Never Called
 void StatisticalAnalysisLibrary_API_Function1()
 {
 }
 
+// Never Called
 int StatisticalAnalysisLibrary_API_Function2()
 {
     return 0;
 }
 
+// Never Called
 bool StatisticalAnalysisLibrary_API_Function3()
 {
     return false;
